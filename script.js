@@ -23,13 +23,13 @@ function cleanAndPosition()
 // investment calculation 
 function compute()
 {
-     // valid principal value entry 
-    if(document.getElementById("principal").value <= 0){
+    principal      = document.getElementById("principal").value; 
+    // valid principal value entry 
+    if(principal <= 0){
         alert("Enter a positive number");
         cleanAndPosition(); //setfocus e clean
         return false;
     } 
-    principal      = document.getElementById("principal").value;
     var years      = parseInt(document.getElementById("years").value);
     // Calculating interest for the period 
     var interest   = principal * years * rateval/100;
