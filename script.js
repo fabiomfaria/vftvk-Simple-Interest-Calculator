@@ -40,5 +40,5 @@ function compute()
     // setting at two tenths 
     var amount     = interest.toFixed(2);
     // <mark> text highlighting 
-    document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,<br>at an interest rate of <mark>"+rateval+"%</mark>\<br\>You will receive an amount of <mark>"+amount+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>";
+    document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,<br>at an interest rate of <mark>"+rateval+"%</mark><br>You will receive an amount of <mark>"+amount+"</mark>,<br>in the year <mark>"+year+"</mark><br>";
 }  
