@@ -36,7 +36,6 @@ function compute()
         // Getting the current date 
     var dateNow = new Date();
     var year       = years + parseInt(dateNow.getFullYear());
-         alert(year);
     // Calculating the accumulated profit 
     // setting at two tenths 
     var amount     = interest.toFixed(2);
