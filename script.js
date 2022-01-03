@@ -30,9 +30,9 @@ function compute()
     } else{
     principal      = document.getElementById("principal").value;
     var years      = parseInt(document.getElementById("years").value);
-            alert(years);
     // Calculating interest for the period 
     var interest   = principal * years * rateval/100;
+                alert(interest);
     // finding the final year of the investment, converting string to integer 
         //getting the full current year 
     var year       = years + parseInt(dateNow.getFullYear());
