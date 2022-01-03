@@ -1,7 +1,6 @@
 var principal = document.getElementById("principal").value;
 var rateval   = document.getElementById("rate").value;
-// Getting the current date 
-var dateNow = new Date();
+
 
 // interest rate update 
 function updateRate() 
@@ -33,7 +32,9 @@ function compute()
     // Calculating interest for the period 
     var interest   = principal * years * rateval/100;
     // finding the final year of the investment, converting string to integer 
-       //getting the full current year 
+       //getting the full current year
+        // Getting the current date 
+    var dateNow = new Date();
     var year       = years + parseInt(dateNow.getFullYear());
          alert(year);
     // Calculating the accumulated profit 
