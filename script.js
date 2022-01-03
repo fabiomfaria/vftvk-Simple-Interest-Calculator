@@ -36,6 +36,7 @@ function compute()
     // finding the final year of the investment, converting string to integer 
         //getting the full current year 
     var year       = years + parseInt(dateNow.getFullYear());
+    alert("ano final"+year);
     // Calculating the accumulated profit 
     // setting at two tenths 
     var amount     = interest.toFixed(2);
