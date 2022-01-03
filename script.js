@@ -23,13 +23,13 @@ function cleanAndPosition()
 // investment calculation 
 function compute()
 {
-    principal      = document.getElementById("principal").value; 
-    // valid principal value entry 
-    if(principal <= 0){
+     // valid principal value entry 
+    if(document.getElementById("principal").value <= 0){
         alert("Enter a positive number");
         cleanAndPosition(); //setfocus e clean
         return false;
     } 
+    principal      = document.getElementById("principal").value;
     var years      = parseInt(document.getElementById("years").value);
     // Calculating interest for the period 
     var interest   = principal * years * rateval/100;
@@ -40,5 +40,5 @@ function compute()
     // setting at two tenths 
     var amount     = interest.toFixed(2);
     // <mark> text highlighting 
-    document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,<br>at an interest rate of <mark>"+rateval+"%</mark><br>You will receive an amount of <mark>"+amount+"</mark>,<br>in the year <mark>"+year+"</mark><br>";
-}  
+    document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,<br>at an interest rate of <mark>"+rateval+"%</mark>\<br\>You will receive an amount of <mark>"+amount+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>";
+}
