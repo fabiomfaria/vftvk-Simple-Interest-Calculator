@@ -27,7 +27,6 @@ function compute()
     if(document.getElementById("principal").value <= 0){
         alert("Enter a positive number");
         cleanAndPosition(); //setfocus e clean
-        return false;
     } else{
     principal      = document.getElementById("principal").value;
     var years      = parseInt(document.getElementById("years").value);
