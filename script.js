@@ -28,7 +28,7 @@ function compute()
         alert("Enter a positive number");
         cleanAndPosition(); //setfocus e clean
         return false;
-    } 
+    } else{
     principal      = document.getElementById("principal").value;
     var years      = parseInt(document.getElementById("years").value);
     // Calculating interest for the period 
@@ -42,4 +42,6 @@ function compute()
     var amount     = interest.toFixed(2);
     // <mark> text highlighting 
     document.getElementById("result").innerHTML="If you deposit <mark>"+principal+"</mark>,<br>at an interest rate of <mark>"+rateval+"%</mark>\<br\>You will receive an amount of <mark>"+amount+"</mark>,\<br\>in the year <mark>"+year+"</mark>\<br\>";
+    }
 }
+    
