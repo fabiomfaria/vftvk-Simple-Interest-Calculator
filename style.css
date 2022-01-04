@@ -1,6 +1,10 @@
 body {background-color:black;font-family:arial;color:white; margin: 0px;}
 
-h1{color:grey;font-family:verdana}
+h1{
+  color:grey;
+  font-family:verdana;
+  text-align: center;
+}
 
 .container {
     width: 100vw;
@@ -15,10 +19,11 @@ h1{color:grey;font-family:verdana}
 .maindiv {
     background-color:white;
     color:black;
-    width:300px;
-    padding:20px;
+    width:500px;
+    padding:50px;
     border-radius:25px;
     align: center;
+    
 }
 
 
